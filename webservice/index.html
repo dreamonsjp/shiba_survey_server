@@ -1,0 +1,29 @@
+<html>
+  <head>
+  <script src="jquery-1.10.2.min.js"></script>
+  <script src="ajaxupload.js"></script>
+  </head>
+  <body>
+    <form  action="http://myphamteen.com/esurvey/index.php/uploader/index?sid=374798&fieldname=374798X5X75&qid=75&preview=0&show_title=1&show_comment=1&pos=0&minfiles=0&maxfiles=1" method="post" enctype="multipart/form-data">
+      File: <input type="file" name="uploadfile">
+      <input type="hidden" name="someParam" value="someValue"/>
+      <input type="submit" id="testupload" value="send">
+    </form>
+	<script>
+	new AjaxUpload($("#testupload"),{
+	action: "http://myphamteen.com/esurvey/index.php/uploader/index?sid=684772&fieldname=684772X10X156&qid=156&preview=0&show_title=1&show_comment=1&pos=0&minfiles=0&maxfiles=1",
+	name: 'uploadfile',
+	data: {
+            valid_extensions : "png, gif",
+            max_filesize : 1,
+            surveyid : 684772,
+            fieldname : "684772X10X156",
+            YII_CSRF_TOKEN : "de2ad9b8072f028dbbe64ed0a762c5a5fd612602"
+        },
+	onComplete: function(file, response){
+		console.log(response);
+	}});
+	
+	</script>
+  </body>
+</html>
