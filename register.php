@@ -4,7 +4,7 @@
 * VitekSoft
 */
 
-include ('application/config/config1.php');
+include ('application/config/config_shiba.php');
 error_reporting(0);
 if (isset($_POST['formsubmitted'])) {
 	//$Password = $_POST['Password'];

@@ -50,7 +50,7 @@ body {
 
 </head>
 <body><?php
-include ('application/config/config1.php');
+include ('application/config/config_shiba.php');
 
 if (isset($_GET['email']) && preg_match('/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/', $_GET['email']))
 {

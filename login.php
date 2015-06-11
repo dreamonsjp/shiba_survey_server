@@ -1,6 +1,6 @@
 <?php
 
-include ('application/config/config1.php');
+include ('application/config/config_shiba.php');
 if (isset($_POST['formsubmitted'])) {
     // Initialize a session:
 session_start();

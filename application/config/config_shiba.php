@@ -1,22 +1,22 @@
 <?php
 
 /*Define constant to connect to database */
-DEFINE('DATABASE_USER', 'muacom_esurvey');
-DEFINE('DATABASE_PASSWORD', 'v[8F0K^]gMa@');
+DEFINE('DATABASE_USER', '');
+DEFINE('DATABASE_PASSWORD', '');
 DEFINE('DATABASE_HOST', 'localhost');
-DEFINE('DATABASE_NAME', 'muacom_esurvey');
+DEFINE('DATABASE_NAME', '');
 /*Default time zone ,to be able to send mail */
 date_default_timezone_set('UTC');
 
 /*You might not need this */
-ini_set('SMTP', "mail.myt.mu"); // Overide The Default Php.ini settings for sending mail
+ini_set('SMTP', ""); // Overide The Default Php.ini settings for sending mail
 
 
 //This is the address that will appear coming from ( Sender )
-define('EMAIL', 'sangltdn@gmail.com');
+define('EMAIL', '');
 
 /*Define the root url where the script will be found such as http://website.com or http://website.com/Folder/ */
-DEFINE('WEBSITE_URL', 'http://myphamteen.com/esurvey/');
+DEFINE('WEBSITE_URL', '');
 
 
 // Make the connection:
